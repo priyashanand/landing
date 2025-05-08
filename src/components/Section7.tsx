@@ -105,10 +105,10 @@ const Section7: React.FC = () => {
         
         {/* User Count Slider Visual (Simplified) */}
         {/* This is a simplified visual representation. A functional slider would require more complex state and logic. */}
-        <div className="relative w-full p-10">
+        <div className="relative w-full px-32 py-3">
           {/* Slider background track */}
           <div className="h-2 rounded-full bg-gray-200 overflow-hidden">
-            <div className="h-full w-[23%] bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600"></div>
+            <div className="h-full w-[20%] bg-gradient-to-r from-teal-400 via-blue-500 to-purple-600"></div>
           </div>
 
           {/* Slider thumb */}
@@ -125,7 +125,7 @@ const Section7: React.FC = () => {
 
 
         {/* Pricing Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch px-32 pt-20">
           {plansData.map((plan, index) => (
             <div
               key={index}
@@ -143,7 +143,7 @@ const Section7: React.FC = () => {
                 </span>
               </div>
 
-              <p className="text-gray-600 text-sm mb-2 min-h-[60px]">{plan.description}</p>
+              <p className="text-gray-600 text-sm mb-2 min-h-[60px] pt-4">{plan.description}</p>
 
               <div className='h-1 bg-slate-300'></div>
 

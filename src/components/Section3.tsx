@@ -25,7 +25,7 @@ const Section3 = () => {
       
 
       <div className='hidden sm:flex sm:flex-col py-20 px-32'>
-        <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-4 leading-tight">            
+        <h1 className="text-[80px] font-bold text-gray-800 mb-4 leading-tight">            
           <span className="relative inline-block">
             Everything you hated about
           </span>
@@ -40,10 +40,10 @@ const Section3 = () => {
         {/* className="bg-[url(/assets/section3img5.png)] bg-contain bg-center" */}
         {/* <img src="/assets/section3img5.png" alt="" className="absolute z-20"/> */}
         <div className='flex justify-between px-32'>
-          <div className=' max-w-[410px] bg-[#FFFFFF] rounded-3xl p-6'>
+          <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
               <img src="/assets/section3img1.png" alt="" className=' px-5'/>
-              <p className=' text-[24px]'>Doctor Protals</p>
+              <p className='text-[#05011F] font-bold text-[24px]'>Doctor Protals</p>
             </div>
             <div className='px-5'>No more email chains—notify, negotiate, and sign with providers all in one place.</div>
           </div>
@@ -51,10 +51,10 @@ const Section3 = () => {
             <div className="w-[50%] h-[50%] bg-[url(/assets/section3img6.png)] bg-cover"></div>
             <div className="w-[50%] h-[50%] bg-[url(/assets/section3img7.png)] bg-cover"></div>
           </div>
-          <div className=' max-w-[410px] bg-[#FFFFFF] rounded-3xl p-6'>
+          <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img2.png" alt="" className=' pr-5'/>
-              <p className=' text-[24px]'>Smart Task Automation</p>
+              <img src="/assets/section3img2.png" alt="" className=' px-5'/>
+              <p className='text-[#05011F] font-bold text-[24px]'>Smart Task Automation</p>
             </div>
             <div className='px-5'>CasePilot automates tasks, follow-ups, and document collection—no manual work.</div>
           </div>
@@ -77,10 +77,10 @@ const Section3 = () => {
 
 
         <div className='flex justify-between px-32'>
-          <div className='max-w-[410px] bg-[#FFFFFF] rounded-3xl p-6'>
+          <div className='w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img3.png" alt="" className=' pr-5'/>
-              <p className=' text-[24px]'>Automated Lien</p>
+              <img src="/assets/section3img3.png" alt="" className=' px-5'/>
+              <p className='text-[#05011F] font-bold  text-[24px]'>Automated Lien</p>
             </div>
             <div className='px-5'>Connect clients to LOP doctors, manage records, and negotiate liens—hassle-free.</div>
           </div>
@@ -89,10 +89,10 @@ const Section3 = () => {
   <div className="w-[50%] h-[50%] bg-[url('/assets/section3img9.png')] bg-cover bg-bottom bg-no-repeat"></div>
 </div>
 
-          <div className=' max-w-[410px] bg-[#FFFFFF] rounded-3xl p-6'>
+          <div className='w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img2.png" alt="" className=' pr-5'/>
-              <p className=' text-[24px]'>Smart Task Automation</p>
+              <img src="/assets/section3img4.png" alt="" className=' px-5'/>
+              <p className='text-[#05011F] font-bold  text-[24px]'>Smart Task Automation</p>
             </div>
             <div className='px-5'>Connect CasePilot with Filevine, Clio, or any CRM to keep data synced and current.</div>
           </div>

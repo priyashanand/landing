@@ -1,60 +1,64 @@
-import React from 'react';
-
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
-    <footer className="relative flex flex-col items-center py-20 px-6 md:px-20 gap-16 w-full bg-[#FFFFFF]">
-      {/* Content */}
-      <div className="flex justify-between gap-12 w-full max-w-[1216px]">
+    <footer className="bg-white py-20 px-6 md:px-20 text-sm text-gray-600">
+      <div className="flex flex-col px-64 md:flex-row justify-between gap-10 md:gap-0">
         {/* Logo and description */}
-        <div className="flex flex-col items-start gap-6 w-full md:w-1/3">
-          <div className="flex flex-row items-center gap-3">
-            <img src="/assets/casePilotLogo.png" alt="InjurySync" className="h-6" />
+        <div className="flex-1">
+          <div className="flex-shrink-0">
+            <img
+              className="h-10 w-auto"
+              src="assets/casePilotLogo.png"
+              alt="CasePilot Logo"
+            />
           </div>
-          <p className="font-source-sans-pro text-sm leading-[157%] text-[#4C547D]">
-            InjurySync is a powerful client intake and case management solution designed to streamline how law firms handle personal injury cases efficiently and securely.
+          <p className="max-w-xs text-[16px] pt-5">
+            Streamline case workflows, eliminate repetitive tasks, and focus more on winning outcomes.
           </p>
-          {/* Social media links */}
-          
         </div>
 
-        {/* Footer Links */}
-        <div className="flex flex-wrap gap-12 w-full md:w-2/3 justify-start">
-          {/* Quick Links */}
-          <div className="flex flex-col gap-4 min-w-[120px]">
-            <h6 className="font-montserrat font-medium text-base text-[#4C547D]">Quick Links</h6>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Home</a>
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Custom Solutions</a>
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Our Providers</a>
-            </div>
+        {/* Quick Links */}
+        <div className="flex gap-16 justify-between ">
+          <div>
+            <h3 className="text-black text-[16px] font-semibold mb-3">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-[16px]">About</a></li>
+              <li><a href="#" className="text-[16px]">Pricing</a></li>
+              <li><a href="#" className="text-[16px]">How we work</a></li>
+              <li><a href="#" className="text-[16px]">Contact Us</a></li>
+            </ul>
           </div>
 
           {/* Our Providers */}
-          <div className="flex flex-col gap-4 min-w-[120px]">
-            <h6 className="font-montserrat font-medium text-base text-[#4C547D]">Our Providers</h6>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Doctors</a>
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Attorneys</a>
-            </div>
+          <div>
+            <h3 className="text-black text-[16px] font-semibold mb-3">Our Providers</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-[16px]">Doctors</a></li>
+              <li><a href="#" className="text-[16px]">Attorneys</a></li>
+              <li><a href="#" className="text-[16px]">Support & Legal</a></li>
+              <li><a href="#" className="text-[16px]">Privacy Policy</a></li>
+            </ul>
           </div>
 
-          {/* Support & Legal */}
-          <div className="flex flex-col gap-4 min-w-[120px]">
-            <h6 className="font-montserrat font-medium text-base text-[#4C547D]">Support & Legal</h6>
-            <div className="flex flex-col gap-2">
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Security</a>
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">Privacy Policy</a>
-              <a href="#" className="font-source-sans-pro text-base text-[#4C547D] hover:underline">End User Terms of Service</a>
-            </div>
+          {/* Newsletter */}
+          <div className="max-w-xs">
+            <h3 className="text-black font-semibold text-[16px] mb-3">Newsletter</h3>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              className="w-full p-2 border border-gray-300 rounded mb-3"
+            />
+            <button className="w-full bg-[#7B3EFF] text-white py-2 rounded hover:bg-purple-700 transition">
+              Subscribe Now
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Copyright */}
-      <div className="w-full max-w-[1216px] pt-8 border-t border-[#ADB3CC] flex justify-center">
-        <span className="font-source-sans-pro text-sm text-center text-[#4C547D]">
-          © Copyright 2022, All Rights Reserved
-        </span>
+      {/* Bottom line */}
+      <div className=" flex items-center justify-center w-full">
+        <div className=" text-center mt-10 text-gray-400 text-[14px] border-t pt-8">
+          © Copyright 2025, All Rights Reserved by CasePilot
+        </div>
       </div>
     </footer>
   );
