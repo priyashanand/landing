@@ -17,10 +17,10 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div className="flex gap-16 justify-between ">
+        <div className="flex gap-24 justify-between ">
           <div>
-            <h3 className="text-black text-[16px] font-semibold mb-3">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-black text-[16px] font-semibold mb-6">Quick Links</h3>
+            <ul className="space-y-6">
               <li><a href="#" className="text-[16px]">About</a></li>
               <li><a href="#" className="text-[16px]">Pricing</a></li>
               <li><a href="#" className="text-[16px]">How we work</a></li>
@@ -30,8 +30,8 @@ const Footer = () => {
 
           {/* Our Providers */}
           <div>
-            <h3 className="text-black text-[16px] font-semibold mb-3">Our Providers</h3>
-            <ul className="space-y-2">
+            <h3 className="text-black text-[16px] font-semibold mb-6">Our Providers</h3>
+            <ul className="space-y-6">
               <li><a href="#" className="text-[16px]">Doctors</a></li>
               <li><a href="#" className="text-[16px]">Attorneys</a></li>
               <li><a href="#" className="text-[16px]">Support & Legal</a></li>
@@ -41,11 +41,11 @@ const Footer = () => {
 
           {/* Newsletter */}
           <div className="max-w-xs">
-            <h3 className="text-black font-semibold text-[16px] mb-3">Newsletter</h3>
+            <h3 className="text-black font-semibold text-[16px] mb-6">Newsletter</h3>
             <input
               type="email"
               placeholder="Enter your email address"
-              className="w-full p-2 border border-gray-300 rounded mb-3"
+              className="w-full p-2 border border-gray-300 rounded mb-6"
             />
             <button className="w-full bg-[#7B3EFF] text-white py-2 rounded hover:bg-purple-700 transition">
               Subscribe Now
@@ -56,7 +56,7 @@ const Footer = () => {
 
       {/* Bottom line */}
       <div className=" flex items-center justify-center w-full">
-        <div className=" text-center mt-10 text-gray-400 text-[14px] border-t pt-8">
+        <div className=" text-center mt-10 text-gray-400 text-[14px] border-t w-full pt-8">
           © Copyright 2025, All Rights Reserved by CasePilot
         </div>
       </div>

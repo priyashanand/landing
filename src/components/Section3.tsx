@@ -21,7 +21,25 @@ const Section3 = () => {
             </span>
           </h1>
         </div>
-        <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
+        <div className="p-20">
+          <div className="relative flex items-center justify-center">
+            {/* Outer Ring */}
+            <div className="absolute w-48 h-48 rounded-full animate-pulseRing1 bg-purple-100"></div>
+
+            {/* Middle Ring */}
+            <div className="absolute w-32 h-32 rounded-full animate-pulseRing2 bg-purple-200"></div>
+
+            {/* Inner Ring */}
+            {/* <div className="absolute w-32 h-32 rounded-full animate-pulse-ring3 bg-purple-300"></div> */}
+
+            {/* Center Circle with Image */}
+            <div className="z-10 w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center">
+              <img src="/assets/section1img3.png" alt="Icon" className="w-32 h-32" />
+            </div>
+          </div>
+        </div>
+
+        <div className=' w-full bg-[#FFFFFF] rounded-3xl p-4'>
           <div className='flex items-center pb-3'>
             <img src="/assets/section3img1.png" alt="" className=' px-5'/>
             <p className='text-[#05011F] font-bold text-[24px]'>Doctor Protals</p>
@@ -51,7 +69,7 @@ const Section3 = () => {
         <div className='flex justify-between px-32'>
           <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img1.png" alt="" className=' px-5'/>
+              <img src="/assets/section3img1.png" alt="" className=' px-5 py-3'/>
               <p className='text-[#05011F] font-bold text-[24px]'>Doctor Protals</p>
             </div>
             <div className='px-5'>No more email chains—notify, negotiate, and sign with providers all in one place.</div>
@@ -62,7 +80,7 @@ const Section3 = () => {
           </div>
           <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img2.png" alt="" className=' px-5'/>
+              <img src="/assets/section3img2.png" alt="" className=' px-5 py-3'/>
               <p className='text-[#05011F] font-bold text-[24px]'>Smart Task Automation</p>
             </div>
             <div className='px-5'>CasePilot automates tasks, follow-ups, and document collection—no manual work.</div>
@@ -88,7 +106,7 @@ const Section3 = () => {
         <div className='flex justify-between px-32'>
           <div className='w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img3.png" alt="" className=' px-5'/>
+              <img src="/assets/section3img3.png" alt="" className=' px-5 py-3'/>
               <p className='text-[#05011F] font-bold  text-[24px]'>Automated Lien</p>
             </div>
             <div className='px-5'>Connect clients to LOP doctors, manage records, and negotiate liens—hassle-free.</div>
@@ -100,7 +118,7 @@ const Section3 = () => {
 
           <div className='w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
             <div className='flex items-center pb-3'>
-              <img src="/assets/section3img4.png" alt="" className=' px-5'/>
+              <img src="/assets/section3img4.png" alt="" className=' px-5 py-3'/>
               <p className='text-[#05011F] font-bold  text-[24px]'>Smart Task Automation</p>
             </div>
             <div className='px-5'>Connect CasePilot with Filevine, Clio, or any CRM to keep data synced and current.</div>

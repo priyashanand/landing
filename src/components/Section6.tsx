@@ -14,8 +14,8 @@ const Section6 = () => {
   </div>
 
   {/* Right side text and button */}
-  <div className="text-center md:text-left max-w-sm">
-    <p className="mb-4 text-[18px] md:text-[20px] text-gray-300 px-4 md:pr-10">
+  <div className="text-center md:text-left max-w-[37%]">
+    <p className="mb-4 text-[18px] md:text-[20px] text-gray-300  md:pr-10">
       Schedule a demo to see how CasePilot AI agents can streamline your workflow.
     </p>
     <button className="px-6 py-2 border border-purple-400 rounded-full text-purple-300 hover:bg-purple-600 hover:text-white transition">

@@ -145,7 +145,7 @@ const Section7: React.FC = () => {
 
               <p className="text-gray-600 text-sm mb-2 min-h-[60px] pt-4">{plan.description}</p>
 
-              <div className='h-1 bg-slate-300'></div>
+              <div className='h-[0.5px] bg-slate-300'></div>
 
               <ul className="space-y-3 mt-10 mb-8 flex-grow">
                 {plan.features.map((feature, featIndex) => (

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 // Plus Icon SVG Component
 const PlusIcon: React.FC<{ className?: string }> = () => (
-  <img src="/assets/section8img1.png" alt="" className=' h-6 w-6'/>
+  <img src="/assets/section8img3.png" alt="" className=' h-6 w-6'/>
 );
 
 // Minus Icon SVG Component
 const MinusIcon: React.FC<{ className?: string }> = () => (
-  <img src="/assets/section8img2.png" alt="" className=' h-6 w-6'/>
+  <img src="/assets/section8img4.png" alt="" className=' h-6 w-6'/>
 );
 
 interface FAQItemProps {
@@ -19,7 +19,8 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="border border-gray-200 p-10">
+    <div>
+    <div className="border border-gray-200 rounded-2xl p-10">
       <button
         onClick={onClick}
         className="flex justify-between items-center w-full text-left focus:outline-none"
@@ -35,6 +36,11 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) 
         </div>
       )}
     </div>
+    <div className='h-6'>
+
+    </div>
+    </div>
+    
   );
 };
 
@@ -80,7 +86,7 @@ const Section8: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold text-gray-900 mb-8 text-left">
             Frequently Asked
           </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold text-purple-600 mb-10 text-left">
+          <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold text-purple-600 mb-20 text-left">
             Questions
           </h2>
 
@@ -94,6 +100,7 @@ const Section8: React.FC = () => {
                 isOpen={openIndex === index}
                 onClick={() => handleToggle(index)}
               />
+              
             ))}
           </div>
         </div>
