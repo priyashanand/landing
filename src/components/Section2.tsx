@@ -1,22 +1,39 @@
+import { useState, useEffect } from 'react';
 
+const items = [
+  { text: 'AI-Powered Intake', img: 'src/assets/section2img1.png' },
+  { text: 'Smart Case Tracking', img: 'src/assets/section2img2.png' },
+  { text: 'Automated Lien Support', img: 'src/assets/section2img3.png' },
+];
 
 const Section2 = () => {
-  return (
-    <div className=' bg-black flex justify-between'>
-      <div className='flex items-center py-10'>
-        <img src="src/assets/section2img1.png" alt="" className=' h-[82px] pl-20 px-5'/>
-        <div className='text-white text-[22px]'>AI-Powered Intake</div>
-      </div>
-      <div className='flex items-center'>
-        <img src="src/assets/section2img1.png" alt="" className=' h-[82px] px-5'/>
-        <div className='text-white text-[22px]'>Smart Case Tracking</div>
-      </div>
-      <div className='flex items-center'>
-        <img src="src/assets/section2img1.png" alt="" className=' h-[82px]  px-5'/>
-        <div className='text-white text-[22px] pr-20'>Automated Lien Support</div>
-      </div>
-    </div>
-  )
-}
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-export default Section2
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % items.length);
+    }, 3000); // Change every 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="bg-black flex justify-center items-center h-[112px] sm:flex-row sm:justify-between sm:h-auto sm:px-32">
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className={`
+            flex items-center transition-opacity duration-700 ease-in-out
+            ${index === currentIndex ? 'opacity-100' : 'opacity-0'}
+            ${index === currentIndex ? 'flex' : 'hidden'}
+            sm:flex sm:opacity-100 sm:py-10 gap-3
+          `}
+        >
+          <img src={item.img} alt="" className="h-[62px] sm:h-[82px] px-" />
+          <div className="text-white text-[16px] sm:text-[22px]">{item.text}</div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+export default Section2;

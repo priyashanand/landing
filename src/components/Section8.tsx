@@ -19,18 +19,18 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="border-b border-gray-200 py-6">
+    <div className="border border-gray-200 p-10">
       <button
         onClick={onClick}
         className="flex justify-between items-center w-full text-left focus:outline-none"
       >
-        <h3 className="text-lg font-medium text-gray-800">{question}</h3>
+        <h3 className="text-[24px] font-medium text-gray-800">{question}</h3>
         <span>
           {isOpen ? <MinusIcon /> : <PlusIcon />}
         </span>
       </button>
       {isOpen && (
-        <div className="mt-4 text-gray-600 text-sm leading-relaxed pr-8">
+        <div className="mt-4 text-gray-600 text-[18px] leading-relaxed pr-8">
           <p>{answer}</p>
         </div>
       )}
@@ -74,13 +74,13 @@ const Section8: React.FC = () => {
 
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
+      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-full px-32 mx-auto">
           {/* Section Title */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-2 text-left">
+          <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold text-gray-900 mb-8 text-left">
             Frequently Asked
           </h2>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-600 mb-10 text-left">
+          <h2 className="text-3xl sm:text-4xl md:text-[64px] font-bold text-purple-600 mb-10 text-left">
             Questions
           </h2>
 

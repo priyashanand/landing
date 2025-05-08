@@ -19,12 +19,18 @@ export default {
           '0%, 100%': { backgroundColor: '#c4b5fd' },
           '50%': { backgroundColor: '#8b5cf6' },
         },
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        }
       },
       animation: {
         pulseRing1: 'pulseRing1 6s ease-in-out infinite',
         pulseRing2: 'pulseRing2 6s ease-in-out infinite',
         pulseRing3: 'pulseRing3 6s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.6s ease-out forwards',
       },
+      
     },
   },
   plugins: [],
