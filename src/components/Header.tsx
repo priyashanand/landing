@@ -11,7 +11,7 @@ const Header = () => {
           <div className="flex-shrink-0">
             <img
               className="h-10 w-auto"
-              src="public/assets/casePilotLogo.png"
+              src="/assets/casePilotLogo.png"
               alt="CasePilot Logo"
             />
           </div>

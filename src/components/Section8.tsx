@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 // Plus Icon SVG Component
 const PlusIcon: React.FC<{ className?: string }> = () => (
-  <img src="public/assets/section8img1.png" alt="" className=' h-6 w-6'/>
+  <img src="/assets/section8img1.png" alt="" className=' h-6 w-6'/>
 );
 
 // Minus Icon SVG Component
 const MinusIcon: React.FC<{ className?: string }> = () => (
-  <img src="public/assets/section8img2.png" alt="" className=' h-6 w-6'/>
+  <img src="/assets/section8img2.png" alt="" className=' h-6 w-6'/>
 );
 
 interface FAQItemProps {

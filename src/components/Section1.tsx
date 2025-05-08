@@ -2,7 +2,7 @@ const Section1 = () => {
   return (
     <section
       className="py-20 md:py-32 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url("public/assets/section1img4.png")' }}
+      style={{ backgroundImage: 'url("/assets/section1img4.png")' }}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
@@ -12,12 +12,12 @@ const Section1 = () => {
 
         {/* Main Headline */}
         <div className="flex justify-center  flex-wrap items-center">
-          <img src="public/assets/section1img1.png" alt="icon" className="h-[39px] sm:h-[69px] px-2 sm:px-0" />
-          <img src="public/assets/section1img2.png" alt="icon" className="hidden sm:block h-[39px] sm:h-[69px] px-0 sm:px-9" />
+          <img src="/assets/section1img1.png" alt="icon" className="h-[39px] sm:h-[69px] px-2 sm:px-0" />
+          <img src="/assets/section1img2.png" alt="icon" className="hidden sm:block h-[39px] sm:h-[69px] px-0 sm:px-9" />
           <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-0.5 sm:mb-4 leading-tight">
             <span className="relative inline-block">Legal Teammates</span>
           </h1>
-          <img src="public/assets/section1img3.png" alt="icon" className="h-[39px] sm:h-[69px] px-2 sm:px-9" />
+          <img src="/assets/section1img3.png" alt="icon" className="h-[39px] sm:h-[69px] px-2 sm:px-9" />
           <div className="sm:h-[69px] sm:w-[69px]"></div>
         </div>
 

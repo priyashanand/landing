@@ -5,7 +5,7 @@ const Section6 = () => {
     <div
       className="h-[352px] flex items-center justify-between px-20 text-white"
       style={{
-        backgroundImage: "url('/public/assets/section6img1.png')", // adjust path if needed
+        backgroundImage: "url('//assets/section6img1.png')", // adjust path if needed
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'left',

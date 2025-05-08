@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 
 const items = [
-  { text: 'AI-Powered Intake', img: 'public/assets/section2img1.png' },
-  { text: 'Smart Case Tracking', img: 'public/assets/section2img2.png' },
-  { text: 'Automated Lien Support', img: 'public/assets/section2img3.png' },
+  { text: 'AI-Powered Intake', img: '/assets/section2img1.png' },
+  { text: 'Smart Case Tracking', img: '/assets/section2img2.png' },
+  { text: 'Automated Lien Support', img: '/assets/section2img3.png' },
 ];
 
 const Section2 = () => {
