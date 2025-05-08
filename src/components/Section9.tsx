@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Section9 = () => {
   return (
     <div className='bg-black flex flex-col items-center justify-center py-16'>
