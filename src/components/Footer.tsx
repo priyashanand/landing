@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         {/* Logo and description */}
         <div className="flex flex-col items-start gap-6 w-full md:w-1/3">
           <div className="flex flex-row items-center gap-3">
-            <img src="src/assets/casePilotLogo.png" alt="InjurySync" className="h-6" />
+            <img src="public/assets/casePilotLogo.png" alt="InjurySync" className="h-6" />
           </div>
           <p className="font-source-sans-pro text-sm leading-[157%] text-[#4C547D]">
             InjurySync is a powerful client intake and case management solution designed to streamline how law firms handle personal injury cases efficiently and securely.

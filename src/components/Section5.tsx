@@ -10,7 +10,7 @@ const Section5 = () => {
             Book your demo today and meet the AI agents built to power the modern law firm.
           </div>
         </div>
-        <img src="src/assets/section5img1.png" alt="" className="p-20" />
+        <img src="public/assets/section5img1.png" alt="" className="p-20" />
 
         {/* Optional white bar at the bottom */}
         <div className="bg-white h-[80px] w-full absolute bottom-0 left-0"></div>
