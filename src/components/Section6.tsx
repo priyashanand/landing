@@ -14,7 +14,7 @@ const Section6 = () => {
   </div>
 
   {/* Right side text and button */}
-  <div className="text-center md:text-left max-w-[37%]">
+  <div className="text-center md:text-left max-w-[%]">
     <p className="mb-4 text-[18px] md:text-[20px] text-gray-300  md:pr-10">
       Schedule a demo to see how CasePilot AI agents can streamline your workflow.
     </p>
