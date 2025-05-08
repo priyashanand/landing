@@ -3,7 +3,7 @@
 const Section6 = () => {
   return (
     <div
-  className="h-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-white bg-[url(assets/image.png)] bg-no-repeat bg-cover bg-center py-20"
+  className="h-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-white bg-[url(/assets/image.png)] bg-no-repeat bg-cover bg-center py-20"
 >
   {/* Left side text */}
   <div className="mb-10 md:mb-0">

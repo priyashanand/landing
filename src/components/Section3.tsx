@@ -4,21 +4,30 @@ const Section3 = () => {
   return (
     <div className='bg-[#FAFAFA] pb-20 '>
       <div className="sm:hidden flex flex-col items-center justify-center  py-12">
-      <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-1 leading-tight">            
-          <span className="relative inline-block">
-            Everything you hated
-          </span>
-        </h1>
-        <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-1 leading-tight">            
-          <span className="relative inline-block">
-            about <span className='text-gray-500'>Case Management </span>
-          </span>
-        </h1>
-        <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-[#834CFF] mb-1 leading-tight">            
-          <span className="relative inline-block">
-            - Solved
-          </span>
-        </h1>
+        <div>
+          <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-1 leading-tight">            
+            <span className="relative inline-block">
+              Everything you hated
+            </span>
+          </h1>
+          <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-gray-800 mb-1 leading-tight">            
+            <span className="relative inline-block">
+              about <span className='text-gray-500'>Case Management </span>
+            </span>
+          </h1>
+          <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-bold text-[#834CFF] mb-1 leading-tight">            
+            <span className="relative inline-block">
+              - Solved
+            </span>
+          </h1>
+        </div>
+        <div className=' w-[1000px] bg-[#FFFFFF] rounded-3xl p-4'>
+          <div className='flex items-center pb-3'>
+            <img src="/assets/section3img1.png" alt="" className=' px-5'/>
+            <p className='text-[#05011F] font-bold text-[24px]'>Doctor Protals</p>
+          </div>
+          <div className='px-5'>No more email chains—notify, negotiate, and sign with providers all in one place.</div>
+        </div>
       </div>
       
       
