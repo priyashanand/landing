@@ -68,16 +68,16 @@ const Section7: React.FC = () => {
     <section className="py-16 md:pt-36 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="text-3xl md:text-[64px] font-semibold tracking-tighter text-gray-800 text-center mb-20">
+        <h2 className="text-3xl md:text-[64px] font-semibold tracking-tighter text-gray-800 text-center mb-10 sm:mb-20">
           Flexible Plans
         </h2>
 
         {/* Toggle */}
         <div className="flex justify-center  mb-10">
-          <div className="flex p-2  rounded-2xl border shadow-sm w-[360px]">
+          <div className="flex p-1 sm:p-2  rounded-2xl border shadow-sm w-[240px] sm:w-[360px]">
             <button
               onClick={() => setBillingCycle('monthly')}
-              className={`w-1/2 py-4 text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
+              className={`w-1/2 py-2 sm:py-4 text-[15px] sm:text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
                 billingCycle === 'monthly'
                   ? 'bg-[#834CFF] text-white shadow-md'
                   : 'text-gray-700'
@@ -87,7 +87,7 @@ const Section7: React.FC = () => {
             </button>
             <button
               onClick={() => setBillingCycle('annually')}
-              className={`w-1/2 py-4 text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
+              className={`w-1/2 py-2 sm:py-4 text-[15px] sm:text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
                 billingCycle === 'annually'
                   ? 'bg-[#834CFF] text-white shadow-md'
                   : 'text-gray-700'
@@ -99,16 +99,16 @@ const Section7: React.FC = () => {
         </div>
 
         {/* Mobile View Carousel */}
-        <div className="md:hidden relative">
+        <div className="md:hidden relative ">
           <div className="flex justify-center">
             <div
-              className={`w-[90%] mx-auto rounded-2xl shadow-lg p-6 flex flex-col transition-all duration-500 ${
+              className={`w-[90%] mx-auto rounded-2xl shadow-lg p-6 py-8 flex flex-col transition-all duration-500 ${
                 plansData[currentIndex].highlight
-                  ? 'border-2 border-purple-600'
+                  ? 'border-2 border-[#834CFF]'
                   : 'border border-gray-200'
               }`}
             >
-              <h3 className="text-xl font-semibold mb-2">{plansData[currentIndex].name}</h3>
+              <h3 className="text-[18px] font-medium mb-4">{plansData[currentIndex].name}</h3>
               <div className="text-3xl font-bold">
                 ${billingCycle === 'monthly'
                   ? plansData[currentIndex].monthlyPrice
@@ -117,19 +117,19 @@ const Section7: React.FC = () => {
               </div>
               <p className="text-sm text-gray-600 mt-4 mb-2">{plansData[currentIndex].description}</p>
               <div className="h-[1px] bg-gray-300 my-4" />
-              <ul className="space-y-2 flex-grow mb-6">
+              <ul className="space-y-5 flex-grow mb-10">
                 {plansData[currentIndex].features.map((f, i) => (
                   <li key={i} className="flex items-start text-gray-700">
                     <CheckIcon />
-                    <span className="text-base">{f.text}</span>
+                    <span className="text-[14px]">{f.text}</span>
                   </li>
                 ))}
               </ul>
               <button
                 className={`w-full py-3 rounded-full font-semibold text-sm ${
                   plansData[currentIndex].highlight
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-white text-purple-600 border-2 border-purple-600'
+                    ? 'bg-[#834CFF] text-white'
+                    : 'bg-white text-[#834CFF] border-2 border-[#834CFF]'
                 }`}
               >
                 {plansData[currentIndex].buttonText}

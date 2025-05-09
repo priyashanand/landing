@@ -2,7 +2,7 @@
 
 const Section3 = () => {
   return (
-    <div className='bg-[#FAFAFA] pb-28 pt-10 '>
+    <div className='bg-[#FAFAFA] sm:pb-28 pt-10 '>
       <div className="sm:hidden flex flex-col items-center justify-center  py-12">
         <div className=" flex flex-col items-center">
           <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-semibold text-black mb-1 leading-tight tracking-tighter">            
@@ -38,36 +38,36 @@ const Section3 = () => {
             </div>
           </div>
         </div>
-        <div className=" px-5">
-          <div className=' w-full bg-[#FFFFFF] rounded-3xl p-8'>
-            <div className='flex items-center pb-3'>
+        <div className=" px-5 mb-4">
+          <div className=' w-full border border-slate-300 bg-[#FFFFFF] rounded-3xl px-2 py-4'>
+            <div className='flex items-center pb-6'>
               <img src="/assets/section3img1.png" alt="" className='h-10 px-5'/>
               <p className='text-[#05011F] font-semibold text-[16px]'>Doctor Protals</p>
             </div>
             <div className='text-[13px] px-5'>No more email chains—notify, negotiate, and sign with providers all in one place.</div>
           </div>
         </div>
-        <div className=" px-5">
-          <div className=' w-full bg-[#FFFFFF] rounded-3xl p-8'>
-            <div className='flex items-center pb-3'>
+        <div className=" px-5 mb-4">
+          <div className=' w-full border border-slate-300 bg-[#FFFFFF] rounded-3xl px-2 py-4'>
+            <div className='flex items-center pb-6'>
               <img src="/assets/section3img2.png" alt="" className='h-10 px-5'/>
               <p className='text-[#05011F] font-semibold text-[16px]'>Smart Task Automation</p>
             </div>
             <div className='text-[13px] px-5'>CasePilot automates tasks, follow-ups, and document collection—no manual work.</div>
           </div>
         </div>
-        <div className=" px-5">
-          <div className=' w-full bg-[#FFFFFF] rounded-3xl p-8'>
-            <div className='flex items-center pb-3'>
+        <div className=" px-5 mb-4">
+          <div className=' w-full border border-slate-300 bg-[#FFFFFF] rounded-3xl px-2 py-4'>
+            <div className='flex items-center pb-6'>
               <img src="/assets/section3img3.png" alt="" className='h-10 px-5'/>
               <p className='text-[#05011F] font-semibold text-[16px]'>Automated Lien</p>
             </div>
             <div className='text-[13px] px-5'>Connect clients to LOP doctors, manage records, and negotiate liens—hassle-free.</div>
           </div>
         </div>
-        <div className=" px-5">
-          <div className=' w-full bg-[#FFFFFF] rounded-3xl p-8'>
-            <div className='flex items-center pb-3'>
+        <div className=" px-5 mb-4">
+          <div className=' w-full border border-slate-300 bg-[#FFFFFF] rounded-3xl px-2 py-4'>
+            <div className='flex items-center pb-6'>
               <img src="/assets/section3img4.png" alt="" className='h-10 px-5'/>
               <p className='text-[#05011F] font-semibold text-[16px]'>Smart Task Automation</p>
             </div>

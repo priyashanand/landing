@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-white py-16 px-6 text-sm text-gray-600 ">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row gap-56 sm:pl-40">
+      <div className="flex flex-col md:flex-row gap-14 sm:gap-56 sm:pl-40">
         {/* Left Column: Logo + Description + Mobile Newsletter */}
         <div className="flex-1 max-w-sm sm">
           <div className="flex items-center gap-2 mb-4">

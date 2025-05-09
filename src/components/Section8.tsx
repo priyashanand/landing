@@ -23,7 +23,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) 
           onClick={onClick}
           className="flex justify-between items-center w-full text-left focus:outline-none"
         >
-          <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-black mb-4">{question}</h3>
+          <div className=" text-lg sm:text-xl md:text-2xl font-medium text-black ">{question}</div>
           <span>{isOpen ? <MinusIcon /> : <PlusIcon />}</span>
         </button>
         {isOpen && (
@@ -77,14 +77,14 @@ const Section8: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-20 md:pb-28 md:px-48 bg-white">
+    <section className="py-16 pb-6 sm:py-20 sm:pb-28 md:px-48 bg-white">
       <div className="px-4 sm:px-6 lg:px-8">
         <div className=" mx-auto pl-5 sm:pl-0">
           {/* Section Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-semibold text-gray-900 pl-2 sm:pl-0 mb-4 sm:mb-8 text-left leading-tight tracking-tighter">
+          <h2 className="text-3xl sm:text-3xl md:text-[64px] font-semibold text-gray-900 pl-2 sm:pl-0 mb-4 sm:mb-8 text-left leading-tight tracking-tighter">
             Frequently Asked
           </h2>
-          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-semibold text-[#834CFF] pl-2 sm:pl-0 mb-10 sm:mb-20 text-left leading-tight tracking-tighter">
+          <h2 className="text-3xl sm:text-3xl md:text-[64px] font-semibold text-[#834CFF] pl-2 sm:pl-0 mb-10 sm:mb-20 text-left leading-tight tracking-tighter">
             Questions
           </h2>
 

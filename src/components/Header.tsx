@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              className="h-10 w-auto"
+              className="h-8 sm:h-10 w-auto"
               src="assets/casePilotLogo.png"
               alt="CasePilot Logo"
             />
@@ -59,10 +59,10 @@ const Header = () => {
 
           {/* Mobile Action Buttons */}
           <div className="pt-4 flex flex-col space-y-3">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition">
+            <button className="bg-[[#834CFF]] hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition">
               Contact Us
             </button>
-            <button className="bg-purple-100 hover:bg-purple-200 text-purple-700 font-medium py-2 px-4 rounded-full text-sm border border-purple-200 hover:border-purple-300 shadow-md transition">
+            <button className="bg-purple-100 hover:bg-purple-200 text-[[#834CFF]] font-medium py-2 px-4 rounded-full text-sm border border-purple-200 hover:border-purple-300 shadow-md transition">
               Login Now
             </button>
           </div>

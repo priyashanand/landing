@@ -6,7 +6,7 @@ const Section6 = () => {
   className="h-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-20 text-white bg-[url(/assets/image.png)] bg-no-repeat bg-cover bg-center py-10 sm:py-28"
 >
   {/* Left side text */}
-  <div className="mb-10 md:mb-0">
+  <div className="mb-5 sm:mb-10 md:mb-0">
     <h2 className="text-[24px] sm:text-[64px] font-semibold tracking-tighter leading-tight text-center md:text-left px-4 md:pl-16">
       Experience the future of <br />
       <span className="text-[#A077FD]">– Legal</span><span className="text-[#A077FD]"> Workflows</span>

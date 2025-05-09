@@ -27,15 +27,15 @@ const Section4 = () => {
   const handleNext = () => setCurrent(current === max ? 0 : current + 1);
 
   return (
-    <div className="bg-[#FFFFFF] pb-32 pt-5">
+    <div className="bg-[#FFFFFF] pb-20 sm:pb-32 pt-5">
       {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}
       <div className="sm:hidden pb-8 sm:py-20 px-6 md:px-40 ">
-        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter ">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter pt-10">
           Empowering Innovation <span className="text-gray-400">- Leading </span>solutions
         </h1>
       </div>
       <div className="hidden sm:flex sm:flex-col pb-8 sm:py-20 px-6 md:px-40 ">
-        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter ">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter">
           Empowering Innovation
         </h1>
         <div className="flex">
@@ -73,10 +73,10 @@ const Section4 = () => {
             <div className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${current * 100}%)` }}>
               {cards.map((card, index) => (
                 <div key={index} className="min-w-full px-2">
-                  <div className="bg-white rounded-3xl shadow-md p-6">
+                  <div className="bg-white border rounded-3xl shadow-md p-6">
                     <img src={card.imgMain} alt="" className="h-auto w-full object-contain mb-6" />
                     {/* <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6" /> */}
-                    <div className="text-xl font-semibold mb-2">{card.title}</div>
+                    <div className="text-xl font-semibold mb-4">{card.title}</div>
                     <div className="text-gray-700 text-sm">{card.desc}</div>
                   </div>
                 </div>
@@ -89,7 +89,7 @@ const Section4 = () => {
         </div>
 
         {/* Dots Indicator */}
-        <div className="flex justify-center space-x-2 mt-4 py-3">
+        <div className="flex justify-center space-x-2 mt-2 ">
           {cards.map((_, i) => (
             <div
               key={i}
