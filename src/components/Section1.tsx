@@ -1,5 +1,3 @@
-import Section2 from "./Section2";
-
 const Section1 = () => {
   return (
     <section
