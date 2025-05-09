@@ -2,8 +2,9 @@
 
 const Section3 = () => {
   return (
-    <div className='bg-[#FAFAFA] sm:pb-28 pt-10 '>
-      <div className="sm:hidden flex flex-col items-center justify-center  py-12">
+    <div className='sm:bg-[#FAFAFA] sm:pb-28 pt-10 '>
+      <div className="bg-[url(/assets/section3img11.png)] bg-contain bg-no-repeat sm:bg-none sm:hidden flex flex-col items-center justify-center  py-12">
+
         <div className=" flex flex-col items-center">
           <h1 className="text-[24px] sm:text-5xl md:text-6xl lg:text-[80px] font-semibold text-black mb-1 leading-tight tracking-tighter">            
             <span className="relative inline-block">
@@ -24,7 +25,7 @@ const Section3 = () => {
         <div className="p-16">
           <div className="relative flex items-center justify-center">
             {/* Outer Ring */}
-            <div className="absolute w-36 h-36 rounded-full animate-pulseRing1 bg-purple-100"></div>
+            <div className="absolute w-40 h-40 rounded-full animate-pulseRing1 bg-purple-100"></div>
 
             {/* Middle Ring */}
             <div className="absolute w-32 h-32 rounded-full animate-pulseRing2 bg-purple-200"></div>
@@ -34,7 +35,7 @@ const Section3 = () => {
 
             {/* Center Circle with Image */}
             <div className="z-20 w-24 h-24 rounded-full bg-purple-600 flex items-center justify-center">
-              <img src="/assets/section1img3.png" alt="Icon" className="w-24 h-24" />
+              <img src="/assets/section3img10.png" alt="Icon" className="w-24 h-24" />
             </div>
           </div>
         </div>
@@ -126,7 +127,7 @@ const Section3 = () => {
 
           {/* Center Circle with Image */}
           <div className="z-10 w-32 h-32 rounded-full bg-purple-600 flex items-center justify-center">
-            <img src="/assets/section1img3.png" alt="Icon" className="w-32 h-32" />
+            <img src="/assets/section3img10.png" alt="Icon" className="w-32 h-32" />
           </div>
         </div>
 

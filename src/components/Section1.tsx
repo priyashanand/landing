@@ -1,9 +1,7 @@
 const Section1 = () => {
   return (
     <section
-      className="py-20 md:py-32 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url("/assets/section1img6.png")' }}
-    >
+      className="py-20 md:py-32 sm:bg-[url(/assets/section1img6.png)] bg-cover bg-center bg-no-repeat">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <div className="inline-block bg-[#F3EEFF] text-gray-800 text-xs sm:text-sm px-6 py-2 rounded-full mb-6 shadow">
