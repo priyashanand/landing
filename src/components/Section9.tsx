@@ -1,8 +1,8 @@
 const Section9 = () => {
   return (
-    <div className="bg-[url(/assets/imagebg.png)] bg-cover bg-center flex flex-col items-center justify-center py-16 px-4 sm:px-8">
+    <div className="bg-[url(/assets/imagebg.png)] bg-cover bg-center flex flex-col items-center justify-center py-24 px-4 sm:px-8">
       {/* Title */}
-      <div className="text-3xl sm:text-4xl md:text-[64px] text-white text-center font-bold leading-tight">
+      <div className="text-3xl sm:text-4xl md:text-[64px] text-white text-center font-semibold leading-tight tracking-tighter">
         Ready to Automate Your Practice?
       </div>
 
@@ -18,7 +18,7 @@ const Section9 = () => {
       <div className="hidden sm:block text-white text-center mt-12 text-lg">
         Experience the future of client intake with Caseflow. 
       </div>
-      <div className="hidden sm:block text-white text-center mt-4 text-lg">
+      <div className="hidden sm:block text-white text-center text-lg">
         Schedule a demo and see it in action!
       </div>
 

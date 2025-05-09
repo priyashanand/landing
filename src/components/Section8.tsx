@@ -17,17 +17,17 @@ interface FAQItemProps {
 
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onClick }) => {
   return (
-    <div className="mb-4">
+    <div className="mb-6">
       <div className="border border-gray-200 rounded-2xl p-5 sm:p-10 bg-white shadow-sm">
         <button
           onClick={onClick}
           className="flex justify-between items-center w-full text-left focus:outline-none"
         >
-          <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-gray-800">{question}</h3>
+          <h3 className="text-lg sm:text-xl md:text-2xl font-medium text-black mb-4">{question}</h3>
           <span>{isOpen ? <MinusIcon /> : <PlusIcon />}</span>
         </button>
         {isOpen && (
-          <div className="mt-4 text-gray-600 text-sm sm:text-base leading-relaxed pr-1 sm:pr-8">
+          <div className="mt-4 text-gray-600 text-sm sm:text-[18px] leading-relaxed pr-1 sm:pr-8">
             <p>{answer}</p>
           </div>
         )}
@@ -77,14 +77,14 @@ const Section8: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-20 md:pb-28 md:px-48 bg-white">
       <div className="px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto pl-5 sm:pl-0">
+        <div className=" mx-auto pl-5 sm:pl-0">
           {/* Section Title */}
-          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-bold text-gray-900 pl-2 sm:pl-0 mb-4 sm:mb-8 text-left leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-semibold text-gray-900 pl-2 sm:pl-0 mb-4 sm:mb-8 text-left leading-tight tracking-tighter">
             Frequently Asked
           </h2>
-          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-bold text-purple-600 pl-2 sm:pl-0 mb-10 sm:mb-20 text-left leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-[64px] font-semibold text-[#834CFF] pl-2 sm:pl-0 mb-10 sm:mb-20 text-left leading-tight tracking-tighter">
             Questions
           </h2>
 

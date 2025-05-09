@@ -65,21 +65,21 @@ const Section7: React.FC = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-slate-50">
+    <section className="py-16 md:pt-36 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
-        <h2 className="text-3xl md:text-[64px] font-bold text-gray-800 text-center mb-8">
+        <h2 className="text-3xl md:text-[64px] font-semibold tracking-tighter text-gray-800 text-center mb-20">
           Flexible Plans
         </h2>
 
         {/* Toggle */}
-        <div className="flex justify-center mb-10">
-          <div className="flex p-1 bg-gray-200 rounded-full shadow-sm w-[260px]">
+        <div className="flex justify-center  mb-10">
+          <div className="flex p-2  rounded-2xl border shadow-sm w-[360px]">
             <button
               onClick={() => setBillingCycle('monthly')}
-              className={`w-1/2 py-2 text-sm font-medium rounded-full transition-colors duration-300 ${
+              className={`w-1/2 py-4 text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
                 billingCycle === 'monthly'
-                  ? 'bg-purple-600 text-white shadow-md'
+                  ? 'bg-[#834CFF] text-white shadow-md'
                   : 'text-gray-700'
               }`}
             >
@@ -87,9 +87,9 @@ const Section7: React.FC = () => {
             </button>
             <button
               onClick={() => setBillingCycle('annually')}
-              className={`w-1/2 py-2 text-sm font-medium rounded-full transition-colors duration-300 ${
+              className={`w-1/2 py-4 text-[16px] font-medium rounded-2xl transition-colors duration-300 ${
                 billingCycle === 'annually'
-                  ? 'bg-purple-600 text-white shadow-md'
+                  ? 'bg-[#834CFF] text-white shadow-md'
                   : 'text-gray-700'
               }`}
             >
@@ -113,7 +113,7 @@ const Section7: React.FC = () => {
                 ${billingCycle === 'monthly'
                   ? plansData[currentIndex].monthlyPrice
                   : plansData[currentIndex].annualPrice}
-                <span className="text-sm text-gray-500 ml-1">/{billingCycle === 'monthly' ? 'month' : 'year'}</span>
+                <span className="text-sm text-gray-500 ml-2">/{billingCycle === 'monthly' ? 'month' : ' year'}</span>
               </div>
               <p className="text-sm text-gray-600 mt-4 mb-2">{plansData[currentIndex].description}</p>
               <div className="h-[1px] bg-gray-300 my-4" />
@@ -163,24 +163,24 @@ const Section7: React.FC = () => {
         </div>
 
         {/* Desktop View Grid */}
-        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 pt-10">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-20 pt-10">
           {plansData.map((plan, index) => (
             <div
               key={index}
-              className={`rounded-3xl shadow-lg p-6 flex flex-col ${
-                plan.highlight ? 'bg-purple-50 border-2 border-purple-600' : 'bg-white border'
+              className={`rounded-3xl shadow-lg p-6 py-12 flex flex-col ${
+                plan.highlight ? 'border-2 border-[#834CFF]' : 'bg-white border'
               }`}
             >
-              <h3 className="text-xl font-semibold text-gray-800 mb-1">{plan.name}</h3>
+              <h3 className="text-xl font- text-gray-800 mb-4">{plan.name}</h3>
               <div className="my-4">
-                <span className="text-4xl font-bold text-gray-900">
+                <span className="text-4xl font-semibold text-gray-900">
                   ${billingCycle === 'monthly' ? plan.monthlyPrice : plan.annualPrice}
                 </span>
-                <span className="text-gray-500 text-sm">/{billingCycle === 'monthly' ? 'month' : 'year'}</span>
+                <span className="text-gray-500 text-sm ml-2">/{billingCycle === 'monthly' ? 'month' : 'year'}</span>
               </div>
-              <p className="text-gray-600 text-sm mb-2 pt-4">{plan.description}</p>
+              <p className="text-gray-600 text-[16px] mb-8 pt-4">{plan.description}</p>
               <div className="h-[0.5px] bg-slate-300" />
-              <ul className="space-y-3 mt-10 mb-8 flex-grow">
+              <ul className="space-y-6 mt-10 mb-10 flex-grow">
                 {plan.features.map((feature, featIndex) => (
                   <li key={featIndex} className="flex items-start text-gray-700">
                     <CheckIcon />
@@ -190,10 +190,10 @@ const Section7: React.FC = () => {
               </ul>
               <button
                 type="button"
-                className={`w-full py-3 px-4 rounded-full font-semibold text-sm ${
+                className={`w-full py-5 px-4 rounded-full font-semibold text-[18px] ${
                   plan.highlight
-                    ? 'bg-purple-600 text-white'
-                    : 'bg-white text-purple-600 border-2 border-purple-600'
+                    ? 'bg-[#834CFF] text-white'
+                    : 'bg-white text-[#834CFF] border-2 border-[#BFA3FF]'
                 }`}
               >
                 {plan.buttonText}

@@ -27,11 +27,23 @@ const Section4 = () => {
   const handleNext = () => setCurrent(current === max ? 0 : current + 1);
 
   return (
-    <div className="bg-[#FAFAFA] pb-20">
-      <div className=" pb-8 sm:py-20 px-6 md:px-40">
-        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-bold text-gray-800 mb-0 sm:mb-4 leading-tight text-center md:text-left">
-          Empowering Innovation <span className="text-gray-400">- Leading solutions</span>
+    <div className="bg-[#FFFFFF] pb-32 pt-5">
+      {/* <span ><img src="/assets/section4img1.png" alt="" className="h-20"/></span> */}
+      <div className="sm:hidden pb-8 sm:py-20 px-6 md:px-40 ">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter ">
+          Empowering Innovation <span className="text-gray-400">- Leading </span>solutions
         </h1>
+      </div>
+      <div className="hidden sm:flex sm:flex-col pb-8 sm:py-20 px-6 md:px-40 ">
+        <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter ">
+          Empowering Innovation
+        </h1>
+        <div className="flex">
+          <img src="/assets/section4img1.png" alt="" className="h-20 pr-3"/>
+          <h1 className="text-3xl md:text-5xl lg:text-[80px] font-semibold text-black mb-0 sm:mb-4 leading-tight text-center md:text-left tracking-tighter ">
+            <span className="text-gray-400"> - Leading </span> solutions
+          </h1>
+        </div>
       </div>
 
       {/* Desktop View */}
@@ -39,12 +51,12 @@ const Section4 = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-white rounded-3xl w-1/3 flex flex-col justify-between overflow-hidden shadow-md"
+            className="bg-white rounded-3xl w-1/3 flex flex-col justify-between overflow-hidden "
           >
-            <div className="p-10">
+            <div className="bg-[#FAFAFA] border rounded-3xl p-10">
               <img src={card.imgMain} alt="" className="h-auto w-full object-contain mx-auto mb-6" />
-              <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6 pl-2" />
-              <div className="text-[28px] font-semibold text-left mb-2">{card.title}</div>
+              <img src="/assets/section4img6.png" alt="" className="h-16 object-contain mb-6 " />
+              <div className="text-[28px] font-semibold text-left mb-5">{card.title}</div>
               <div className="text-[18px] text-left text-gray-700">{card.desc}</div>
             </div>
           </div>

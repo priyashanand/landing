@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="bg-white py-16 px-6 md:px-20 text-sm text-gray-600 ">
+    <footer className="bg-white py-16 px-6 text-sm text-gray-600 ">
       {/* Top Section */}
-      <div className="flex flex-col md:flex-row gap-20 sm:pl-60">
+      <div className="flex flex-col md:flex-row gap-56 sm:pl-40">
         {/* Left Column: Logo + Description + Mobile Newsletter */}
         <div className="flex-1 max-w-sm sm">
           <div className="flex items-center gap-2 mb-4">
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
 
         {/* Right Columns: Links + Providers + Desktop Newsletter */}
-        <div className="flex flex-row justify-between sm:justify-normal gap-10 md:gap-24 flex-1">
+        <div className="flex flex-row justify-between sm:justify-normal gap-10 md:gap-36 flex-1">
           {/* Quick Links */}
           <div>
             <h3 className="text-black font-semibold text-[16px] mb-6">Quick Links</h3>
@@ -62,7 +62,7 @@ const Footer = () => {
               placeholder="Enter your email address"
               className="w-full p-2 border border-gray-300 rounded-lg mb-6"
             />
-            <button className="w-full bg-[#7B3EFF] text-white py-2 rounded-lg hover:bg-purple-700 transition">
+            <button className="w-full bg-[#7B3EFF] text-white py-3 rounded-lg hover:bg-purple-700 transition">
               Subscribe Now
             </button>
           </div>
@@ -71,7 +71,7 @@ const Footer = () => {
 
       {/* Bottom Section */}
       <div className="flex items-center justify-center w-full mt-12">
-        <div className="text-center text-gray-400 text-[13px] border-t w-full pt-6">
+        <div className="text-center text-gray-400 text-[16px] border-t w-full pt-6">
           © Copyright 2025, All Rights Reserved by CasePilot
         </div>
       </div>

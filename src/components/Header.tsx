@@ -18,20 +18,21 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#home" className="text-gray-600 hover:text-purple-700 px-3 py-2 rounded-md text-sm font-medium">Home</a>
-            <a href="#about" className="text-gray-600 hover:text-purple-700 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
-            <a href="#how-we-work" className="text-gray-600 hover:text-purple-700 px-3 py-2 rounded-md text-sm font-medium">How we work</a>
-            <a href="#pricing" className="text-gray-600 hover:text-purple-700 px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
+            <a href="#home" className="text-black  px-3 py-2 rounded-md text-sm font-semibold">Home</a>
+            <a href="#about" className="text-gray-600  px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+            {/* <a href="#how-we-work" className="text-gray-600 hover:text-purple-700 px-3 py-2 rounded-md text-sm font-medium">How we work</a> */}
+            <a href="#pricing" className="text-gray-600  px-3 py-2 rounded-md text-sm font-medium">Pricing</a>
           </nav>
 
           {/* Desktop Action Buttons */}
           <div className="hidden md:flex items-center space-x-3">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition">
-              Contact Us
-            </button>
-            <button className="bg-purple-100 hover:bg-purple-200 text-purple-700 font-medium py-2 px-4 rounded-full text-sm border border-purple-200 hover:border-purple-300 shadow-md transition">
+          <button className=" text-black font-medium py-2 px-4 rounded-full text-sm transition">
               Login Now
             </button>
+            <button className="bg-[#834CFF] hover:bg-[#6E3EDB] text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition">
+              Contact Us
+            </button>
+            
           </div>
 
           {/* Hamburger Button */}
@@ -51,7 +52,7 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white shadow-inner px-4 pt-4 pb-6 space-y-3">
-          <a href="#home" className="block text-gray-600 hover:text-purple-700 text-base font-medium text-left">Home</a>
+          <a href="#home" className="block text-gray-600 hover:text-purple-700 text-base font-thin text-left">Home</a>
           <a href="#about" className="block text-gray-600 hover:text-purple-700 text-base font-medium">About Us</a>
           <a href="#how-we-work" className="block text-gray-600 hover:text-purple-700 text-base font-medium">How we work</a>
           <a href="#pricing" className="block text-gray-600 hover:text-purple-700 text-base font-medium">Pricing</a>
