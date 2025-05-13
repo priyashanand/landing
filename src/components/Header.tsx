@@ -87,7 +87,7 @@ const Header = () => {
 
           <div className="pt-4 flex flex-col space-y-3">
             <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-              <button className="bg-[#834CFF] hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-full text-sm shadow-md transition">
+              <button className="bg-[#834CFF] hover:bg-purple-700 text-white font-medium py-2 px-4 rounded-full w-full text-sm shadow-md transition">
                 Contact Us
               </button>
             </Link>
