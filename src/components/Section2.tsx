@@ -17,7 +17,7 @@ const Section2 = () => {
   }, []);
 
   return (
-    <div className="bg-black flex justify-center items-center h-[112px] sm:flex-row sm:justify-between sm:h-auto sm:px-32">
+    <div className="bg-black flex justify-center items-center h-[166px] sm:flex-row sm:justify-between sm:h-auto sm:px-32">
       {items.map((item, index) => (
         <div
           key={index}

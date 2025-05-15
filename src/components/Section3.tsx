@@ -95,19 +95,19 @@ const Section3 = () => {
       <div className="hidden sm:flex sm:flex-col" >
         {/* className="bg-[url(/assets/section3img5.png)] bg-contain bg-center" */}
         {/* <img src="/assets/section3img5.png" alt="" className="absolute z-20"/> */}
-        <div className='flex justify-between px-32'>
-          <div className=' w-[1000px] bg-[#FFFFFF] border rounded-3xl p-8'>
+        <div className='flex justify-center px-32'>
+          <div className=' w-[33%] bg-[#FFFFFF] border rounded-3xl p-8'>
             <div className='flex items-center pb-3 '>
               <img src="/assets/section3img1.png" alt="" className='h-20 px-5 py-3'/>
               <p className='text-[#05011F] font-semibold text-[24px]'>Doctor Protals</p>
             </div>
             <div className='px-5'>No more email chains—notify, negotiate, and sign with providers all in one place.</div>
           </div>
-          <div className="flex items-end w-full gap-32">
-            <div className="w-[50%] h-[50%] bg-[url(/assets/section3img6.png)] bg-cover"></div>
+          <div className="flex items-end w-[33%] gap-36">
+            <div className="w-[50%] h-[50%] bg-[url(/assets/section3img6.png)] bg-cover bg-right-top "></div>
             <div className="w-[50%] h-[50%] bg-[url(/assets/section3img7.png)] bg-cover"></div>
           </div>
-          <div className=' w-[1000px] bg-[#FFFFFF] border rounded-3xl p-8'>
+          <div className=' w-[33%] bg-[#FFFFFF] border rounded-3xl p-8'>
             <div className='flex items-center pb-3'>
               <img src="/assets/section3img2.png" alt="" className='h-20  px-5 py-3'/>
               <p className='text-[#05011F] font-semibold text-[24px]'>Smart Automation</p>
@@ -115,6 +115,7 @@ const Section3 = () => {
             <div className='px-5'>CasePilot automates tasks, follow-ups, and document collection.</div>
           </div>
         </div>
+        <div className="h-9"></div>
         <div className="relative flex items-center justify-center">
           {/* Outer Ring */}
           <div className="absolute w-64 h-64 rounded-full animate-pulseRing1 bg-purple-100"></div>
@@ -130,22 +131,24 @@ const Section3 = () => {
             <img src="/assets/section3img10.png" alt="Icon" className="w-32 h-32" />
           </div>
         </div>
+        <div className="h-9"></div>
 
 
-        <div className='flex justify-between px-32'>
-          <div className='w-[1000px] bg-[#FFFFFF] border rounded-3xl p-8'>
+
+        <div className='flex justify-center px-32'>
+          <div className='w-[33%] bg-[#FFFFFF] border rounded-3xl p-8'>
             <div className='flex items-center pb-3'>
               <img src="/assets/section3img3.png" alt="" className='h-20 px-5 py-3'/>
               <p className='text-[#05011F] font-semibold  text-[24px]'>Automated Lien</p>
             </div>
             <div className='px-5'>Connect clients to LOP doctors, manage records, and negotiate liens—hassle-free.</div>
           </div>
-          <div className="flex items-start w-full h-auto gap-32">
-            <div className="w-[50%] h-[50%] bg-[url('/assets/section3img8.png')] bg-cover bg-bottom bg-no-repeat"></div>
-            <div className="w-[50%] h-[50%] bg-[url('/assets/section3img9.png')] bg-cover bg-bottom bg-no-repeat"></div>
+          <div className="flex items-start w-[33%] h-auto gap-36">
+            <div className="w-[50%] h-[50%] bg-[url('/assets/section3img8.png')] bg-cover bg-right-bottom bg-no-repeat"></div>
+            <div className="w-[50%] h-[50%] bg-[url('/assets/section3img9.png')] bg-cover bg-left-bottom bg-no-repeat"></div>
           </div>
 
-          <div className='w-[1000px] bg-[#FFFFFF] border rounded-3xl p-8'>
+          <div className='w-[33%] bg-[#FFFFFF] border rounded-3xl p-8'>
             <div className='flex items-center pb-3'>
               <img src="/assets/section3img4.png" alt="" className='h-20 px-5 py-3'/>
               <p className='text-[#05011F] font-semibold  text-[24px]'>CRM Integration</p>

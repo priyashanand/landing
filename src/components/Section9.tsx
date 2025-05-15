@@ -23,7 +23,7 @@ const Section9 = () => {
       </div>
 
       {/* CTA Button */}
-      <button className="bg-[#834CFF] text-white py-3 px-6 rounded-full mt-8 font-semibold text-sm sm:text-base">
+      <button className="bg-[#834CFF] text-white py-3 px-[41px] rounded-full mt-8 font-semibold text-sm sm:text-base">
         Book a Demo
       </button>
     </div>
