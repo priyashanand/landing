@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Home from './page/Home';
 import Contact from './page/Contact';
 import Header from './components/Header';
+import Footer1 from './components/Footer1';
 import Footer from './components/Footer';
 
 function ScrollToHashElement() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
+        <Footer1 />
       </div>
     </Router>
   );
