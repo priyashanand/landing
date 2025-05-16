@@ -1,6 +1,6 @@
 const Section10 = () => {
   return (
-    <div className="flex flex-col lg:flex-row px-6 lg:px-44 py-14 gap-14">
+    <div className="flex flex-col lg:flex-row items-center px-6 lg:px-44 py-14 gap-14">
       
       {/* Contact us */}
       <div className="flex flex-col w-full space-y-10">
@@ -10,17 +10,17 @@ const Section10 = () => {
         <div className="text-[#656565] text-[14px] lg:text-[20px]">
           Whether you’re a growing firm exploring automation or an established practice ready to scale, our team is here to help. We’d love to hear from you.
         </div>
-        <div className="flex flex-col space-y-4">
+        <div className="flex flex-col space-y-7">
           <div className="flex items-center gap-5">
-            <img src="/assets/section10img1.png" alt="" className="h-12 lg:h-20" />
+            <img src="/assets/section10img1.png" alt="" className="h-12 lg:h-[56px]" />
             <div className="text-[#363434] text-[16px] lg:text-[20px]">info@casepilot.com</div>
           </div>
           <div className="flex items-center gap-5">
-            <img src="/assets/section10img2.png" alt="" className="h-12 lg:h-20" />
+            <img src="/assets/section10img2.png" alt="" className="h-12 lg:h-[56px]" />
             <div className="text-[#363434] text-[16px] lg:text-[20px]">(+123) - 40190289</div>
           </div>
           <div className="flex items-center gap-5">
-            <img src="/assets/section10img3.png" alt="" className="h-12 lg:h-20" />
+            <img src="/assets/section10img3.png" alt="" className="h-12 lg:h-[56px]" />
             <div className="text-[#363434] text-[16px] lg:text-[20px]">Los Angeles, California</div>
           </div>
         </div>
@@ -33,14 +33,14 @@ const Section10 = () => {
         </div>
 
         {/* Name + Company */}
-        <div className="flex flex-col lg:flex-row gap-4 w-full">
+        <div className="flex flex-col lg:flex-row gap-8 w-full">
           <div className="flex flex-col w-full">
             <label htmlFor="fullName" className="text-[#363434] text-[13px] sm:text-[16px] mb-1">Full Name</label>
             <input
               type="text"
               id="fullName"
               placeholder="Enter Name"
-              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] p-2 rounded w-full"
+              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
             />
           </div>
           <div className="flex flex-col w-full">
@@ -49,20 +49,20 @@ const Section10 = () => {
               type="text"
               id="company"
               placeholder="Enter Company Name"
-              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] p-2 rounded w-full"
+              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
             />
           </div>
         </div>
 
         {/* Email + Phone */}
-        <div className="flex flex-col lg:flex-row gap-4 w-full">
+        <div className="flex flex-col lg:flex-row gap-8 w-full">
           <div className="flex flex-col w-full">
             <label htmlFor="email" className="text-[#363434] text-[13px] sm:text-[16px] mb-1">Email</label>
             <input
               type="email"
               id="email"
               placeholder="Enter Email Address"
-              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] p-2 rounded w-full"
+              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
             />
           </div>
           <div className="flex flex-col w-full">
@@ -71,7 +71,7 @@ const Section10 = () => {
               type="tel"
               id="phone"
               placeholder="Enter Phone Number"
-              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] p-2 rounded w-full"
+              className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
             />
           </div>
         </div>
@@ -82,11 +82,11 @@ const Section10 = () => {
           <textarea
             id="message"
             placeholder="Add your text here"
-            className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] p-2 rounded w-full min-h-[120px]"
+            className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full min-h-[135px]"
           />
         </div>
 
-        <button className="bg-[#834CFF] px-6 py-3 rounded-full sm:rounded-lg text-white text-[13px] sm:text-[16px] w-fit self-start">
+        <button className="bg-[#834CFF] py-[16px] px-[80px] rounded-full sm:rounded-2xl text-white text-[13px] sm:text-[16px] w-fit self-start">
           Send Message
         </button>
       </div>
