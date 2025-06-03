@@ -5,6 +5,7 @@ import Contact from './page/Contact';
 import Header from './components/Header';
 import Footer1 from './components/Footer1';
 import Footer from './components/Footer';
+import AboutUs from './page/AboutUs';
 
 function ScrollToHashElement() {
   const location = useLocation();
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path='/about' element={<AboutUs/>}/>
         </Routes>
         <Footer />
         <Footer1 />

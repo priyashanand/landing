@@ -4,7 +4,7 @@ import FooterLinks from "./FooterLinks";
 import FooterNewsletter from "./FooterNewsletter";
 
 const Footer1: React.FC = () => {
-  const quickLinks = ["About", "Pricing", "How we work", "Contact Us"];
+  const quickLinks = ["About", "Pricing", "Contact Us"];
   const providerLinks = ["Doctors", "Attorneys", "Support & Legal", "Privacy Policy"];
 
   return (

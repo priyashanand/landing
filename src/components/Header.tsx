@@ -4,6 +4,7 @@ import { useLocation, useNavigate, Link } from 'react-router-dom';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isPricingInView, setIsPricingInView] = useState(false);
+  // const [isAboutInView, setIsAboutInView] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -53,7 +54,16 @@ const Header = () => {
     }
   };
 
-  const isHomeActive = !isPricingInView;
+    const handleAboutClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+  };
+  
+  const isAboutActive = location.pathname === '/about';
+  const isHomeActive = !(isPricingInView || isAboutActive);
   const isPricingActive = isPricingInView;
 
   return (
@@ -82,6 +92,16 @@ const Header = () => {
             >
               Home
             </button>
+            <Link to="/about">
+              <button
+                onClick={handleAboutClick}
+                className={`px-3 py-2 rounded-md text-sm ${
+                  isAboutActive ? 'text-black font-semibold' : 'text-gray-600 font-medium'
+                }`}
+              >
+                About
+              </button>
+            </Link>
             <button
               onClick={handlePricingClick}
               className={`px-3 py-2 rounded-md text-sm ${
