@@ -5,16 +5,22 @@ import Section3 from '../about/Section3'
 import Section4 from '../about/Section4'
 import Section5 from '../about/Section5'
 import Section9 from '../components/Section9'
+import MobAbout from '../about/MobAbout'
 
 const AboutUs:React.FC = () => {
   return (
     <main>
+      <main className='hidden sm:block'>
       <Section1/>
       <Section2/>
       <Section3/>
       <Section4/>
       <Section5/>
       <Section9/>
+      </main>
+      <main className='sm:hidden'>
+        <MobAbout/>
+      </main>
     </main>
   )
 }

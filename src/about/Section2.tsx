@@ -35,7 +35,7 @@ const Section2 = () => {
 
   return (
     <div>
-      <div className='hidden sm:block bg-black'>
+      <div className=' bg-black'>
         <div className="flex justify-between items-center h-[112px] sm:px-32">
           <div className='text-white text-[24px]'>
             Trusted by Top PI Firms and Trial Lawyers 

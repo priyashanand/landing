@@ -1,8 +1,51 @@
-const Section10 = () => {
+import React, { useRef, useState } from "react";
+import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
+
+type FormValues = {
+  fullName: string;
+  company: string;
+  email: string;
+  phone: string;
+  message: string;
+};
+
+const Section10:React.FC = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm<FormValues>();
+
+  const [isSending, setIsSending] = useState(false);
+
+  const onSubmit = async () => {
+    if (!formRef.current) return;
+    setIsSending(true);
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_SECRET_KEY,
+        import.meta.env.VITE_TEMPLATE_KEY,
+        formRef.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      );
+      toast.success("Message sent successfully!");
+      reset();
+    } catch (error) {
+      toast.error("Failed to send message. Try again later.");
+      console.error("EmailJS Error:", error);
+    } finally {
+      setIsSending(false);
+    }
+  };
+
   return (
     <div className="flex flex-col lg:flex-row items-center px-6 lg:px-44 py-14 gap-14">
-      
-      {/* Contact us */}
+      <Toaster/>
+      {/* Contact info */}
       <div className="flex flex-col w-full space-y-10">
         <div className="text-black text-[24px] lg:text-[64px] font-semibold leading-tight tracking-tighter">
           Contact Us
@@ -26,9 +69,13 @@ const Section10 = () => {
         </div>
       </div>
 
-      {/* The form */}
-      <div className="flex flex-col w-full  lg:p-10 space-y-6 sm:border-2 sm:border-[#CDCDCD] rounded-3xl">
-        <div className= "hidden sm:block text-[#05011F] text-[28px] lg:text-[32px] font-semibold leading-tight tracking-tighter">
+      {/* Contact form */}
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col w-full lg:p-10 space-y-6 sm:border-2 sm:border-[#CDCDCD] rounded-3xl"
+      >
+        <div className="hidden sm:block text-[#05011F] text-[28px] lg:text-[32px] font-semibold leading-tight tracking-tighter">
           Let's get in touch
         </div>
 
@@ -40,7 +87,9 @@ const Section10 = () => {
               type="text"
               id="fullName"
               placeholder="Enter Name"
+              {...register("fullName", { required: "Name is required" })}
               className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
+              name="fullName"
             />
           </div>
           <div className="flex flex-col w-full">
@@ -49,7 +98,9 @@ const Section10 = () => {
               type="text"
               id="company"
               placeholder="Enter Company Name"
+              {...register("company")}
               className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
+              name="company"
             />
           </div>
         </div>
@@ -62,8 +113,17 @@ const Section10 = () => {
               type="email"
               id="email"
               placeholder="Enter Email Address"
+              {...register("email", {
+                required: "Email is required",
+                pattern: {
+                  value: /\S+@\S+\.\S+/,
+                  message: "Invalid email format"
+                }
+              })}
               className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
+              name="email"
             />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
           </div>
           <div className="flex flex-col w-full">
             <label htmlFor="phone" className="text-[#363434] text-[13px] sm:text-[16px] mb-1">Phone Number</label>
@@ -71,7 +131,9 @@ const Section10 = () => {
               type="tel"
               id="phone"
               placeholder="Enter Phone Number"
+              {...register("phone")}
               className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full"
+              name="phone"
             />
           </div>
         </div>
@@ -82,14 +144,24 @@ const Section10 = () => {
           <textarea
             id="message"
             placeholder="Add your text here"
+            {...register("message", {
+              required: "Message is required",
+              minLength: { value: 10, message: "Message should be at least 10 characters" }
+            })}
             className="bg-[#F5F1FF] border border-[#E2E2E2] text-[13px] sm:text-[16px] py-[11px] px-[21px] rounded-xl w-full min-h-[135px]"
+            name="message"
           />
+          {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>}
         </div>
 
-        <button className="bg-[#834CFF] py-[16px] px-[80px] rounded-full sm:rounded-2xl text-white text-[13px] sm:text-[16px] w-fit self-start">
-          Send Message
+        <button
+          type="submit"
+          disabled={isSending}
+          className="bg-[#834CFF] py-[16px] px-[80px] rounded-full sm:rounded-2xl text-white text-[13px] sm:text-[16px] w-fit self-start"
+        >
+          {isSending ? "Sending..." : "Send Message"}
         </button>
-      </div>
+      </form>
     </div>
   );
 };

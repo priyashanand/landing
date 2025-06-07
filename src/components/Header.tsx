@@ -153,6 +153,18 @@ const Header = () => {
           >
             Home
           </button>
+          <Link to="/about">
+          <button
+            onClick={() => {
+              handleAboutClick();
+              setIsMenuOpen(false);
+            }}
+            className={`block w-full text-left text-base pt-4 ${
+              isAboutActive ? 'text-black font-semibold' : 'text-gray-600 font-medium '
+            }`}
+          >
+            About
+          </button></Link>
           <button
             onClick={() => {
               handlePricingClick();
