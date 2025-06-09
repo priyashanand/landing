@@ -9,12 +9,12 @@ const cards = [
   },
   {
     imgMain: "/assets/section4img4.png",
-    title: "Instant Followup",
+    title: "Smart Automation",
     desc: "Streamline your intake process with AI, efficiently gathering case details, screen leads, and directing them to your team."
   },
   {
     imgMain: "/assets/section4img5.png",
-    title: "Instant Followup",
+    title: "AI Workflow",
     desc: "Switch on smart workflows to handle tasks, follow-ups, document requests, and lien coordination—automatically."
   }
 ];

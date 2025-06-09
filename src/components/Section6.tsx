@@ -18,9 +18,10 @@ const Section6 = () => {
     <p className="mb-6 text-[12px] md:text-[20px] text-gray-300 md:pr-32">
       Schedule a demo to see how CasePilot AI agents can streamline your workflow.
     </p>
+    <a href="https://calendly.com">
     <button className="px-6 py-2 border border-purple-400 rounded-full text-purple-300 hover:bg-purple-600 hover:text-white transition">
       Book A Demo
-    </button>
+    </button></a>
   </div>
 </div>
 

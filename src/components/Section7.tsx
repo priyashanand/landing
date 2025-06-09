@@ -31,7 +31,7 @@ const plansData = [
       { text: 'Detailed Account Manager', included: true },
     ],
     highlight: true,
-    buttonText: 'Get Started Now',
+    buttonText: 'Get Started',
   },
   {
     name: 'Custom Plan',
@@ -44,7 +44,7 @@ const plansData = [
       { text: 'Detailed Account Manager', included: true },
       { text: 'Dedicated Support Line', included: true },
     ],
-    buttonText: 'Contact Us',
+    buttonText: 'Get Started',
   },
 ];
 

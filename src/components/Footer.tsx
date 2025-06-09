@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="sm:hidden bg-white rounded-b-[40px] shadow-sm">
@@ -19,10 +21,9 @@ const Footer = () => {
             <div>
               <h3 className="text-black font-semibold text-[16px] mb-6">Quick Links</h3>
               <ul className="space-y-4 text-gray-600 text-[15px]">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">How we work</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><Link to="/about/#about">About</Link></li>
+                <li><Link to="/#pricing">Pricing</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
               </ul>
             </div>
 

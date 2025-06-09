@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Section1 = () => {
   return (
     <section
@@ -37,18 +39,20 @@ const Section1 = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-row justify-center items-center px-7 sm:px-0 space-x-3 sm:space-x-[16px]">
-          <button
+          <Link
+            to="/contact"
             type="button"
             className="bg-[#834CFF] hover:bg-[#6E3EDB] text-white font-medium py-[15px] px-0 sm:px-[27.5px] rounded-full text-[12px] sm:text-[14px]  transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-75 w-[50%] sm:w-auto"
           >
             Get Started Now
-          </button>
-          <button
+          </Link>
+          <a
+            href="https://calendly.com"
             type="button" 
             className="bg-transparent hover:bg-purple-100 text-[#211738] font-medium py-[15px] px-0 sm:px-[27.5px] rounded-full text-[12px] sm:text-[14px] border border-[#BEA2FF] hover:border-purple-700 transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-75 w-[50%] sm:w-auto"
           >
             Book A Demo
-          </button>
+          </a>
         </div>
         
         
