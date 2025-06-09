@@ -62,7 +62,7 @@ const Header = () => {
     }
   };
   
-  const isAboutActive = location.pathname === '/about';
+  const isAboutActive = location.pathname.startsWith('/about');
   const isHomeActive = !(isPricingInView || isAboutActive);
   const isPricingActive = isPricingInView;
 
